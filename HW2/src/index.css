@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: white; /* Ensure the body background is white */
+  color: black;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+header {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-gray-200 {
+  background-color: #edf2f7;
+}
+
+.dark .bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.text-black {
+  color: black;
+}
+
+.dark .text-white {
+  color: white;
+}
+
