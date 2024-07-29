@@ -31,7 +31,7 @@ const App = () => {
     <Router>
       <div className={`App ${theme} max-page-height`}>
         <Header toggleTheme={toggleTheme} theme={theme} />
-        <main className="flex flex-col items-center justify-center flex-grow min-h-screen bg-white dark:bg-gray-800 pt-16">
+        <main className="main-content bg-white dark:bg-gray-800 pt-16">
           <Routes>
             <Route path="/" element={isLoggedIn ? <MainMenu name={name} /> : <Login onLogin={handleLogin} />} />
             <Route path="/generate-quiz" element={<GenerateQuiz />} />

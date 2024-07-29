@@ -39,7 +39,13 @@ header {
 }
 
 .max-page-height {
-  max-height: 100vh; /* Set to the maximum desired height */
+  max-height: 100vh; /* Set maximum height to viewport height */
   overflow-y: auto;  /* Enable vertical scrolling if content exceeds max height */
   overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.main-content {
+  max-width: 1200px; /* Optional: constrain the content width for better readability */
+  margin: 0 auto;
+  padding: 1rem;
 }
