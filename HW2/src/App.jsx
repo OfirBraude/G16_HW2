@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className={`App ${theme}`}>
+      <div className={`App ${theme} max-page-height`}>
         <Header toggleTheme={toggleTheme} theme={theme} />
         <main className="flex flex-col items-center justify-center flex-grow min-h-screen bg-white dark:bg-gray-800 pt-16">
           <Routes>
